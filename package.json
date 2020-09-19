@@ -1,0 +1,38 @@
+{
+  "name": "free-tailwind-templates",
+  "version": "1.0.0",
+  "description": "A collection of free templates built with Tailwind CSS - landing pages and components that you can directly use and modify in your projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/time2hack/free-tailwind-templates.git"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "free",
+    "templates",
+    "landing",
+    "page",
+    "templates",
+    "with",
+    "tailwind",
+    "landing",
+    "page",
+    "free",
+    "components",
+    "with"
+  ],
+  "author": "Pankaj Patel, Vladimir Apostolski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/time2hack/free-tailwind-templates/issues"
+  },
+  "homepage": "https://github.com/time2hack/free-tailwind-templates#readme",
+  "dependencies": {
+    "tailwindcss": "^1.8.9"
+  }
+}
