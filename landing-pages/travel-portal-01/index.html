@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A Free Landing Page Template for Travel Portals built with Tailwind CSS & HTML</title>
+	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/fa.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+	<div class="pt-3 pb-6" 
+		 style="background: rgb(255,155,112); background: linear-gradient(45deg,  rgba(219,41,116,1)  0%, rgba(249,142,61,1) 100%);">
+		
+		
+			<nav class="w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
+				    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+				        <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+				            <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="#">Travel Agency Template</a>
+				            <button id="menu-btn" class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-10 w-10"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg></button>
+				        </div>
+				        <div class="lg:flex flex-grow items-center hidden" id="menu">
+				            <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+				                <li>
+				                    <a href="#" class="px-3 py-4 flex items-center text-xs uppercase font-bold text-white hover:underline lg:py-2">
+				                        <i class="fas fa-home"></i><span class="ml-1">Home</span>
+				                    </a>
+				                </li>
+				                <li>
+				                    <a href="#" class="px-3 py-4 flex items-center text-xs uppercase font-bold text-white hover:underline lg:py-2">
+				                        <i class="fas fa-plane"></i><span class="ml-1">Flights</span>
+				                    </a>
+				                </li>
+				                <li>
+				                    <a class="px-3 py-4 flex items-center text-xs uppercase font-bold text-white hover:underline  lg:py-2" href="#">
+				                    	<i class="fas fa-hotel"></i><span class="ml-1">Hotels</span></a>
+				                </li>
+				                <li>
+				                    <a class="px-3 py-4 flex items-center text-xs uppercase font-bold text-white hover:underline lg:py-2" href="#">
+				                        <i class="fas fa-hiking"></i><span class="ml-2">Tours</span>
+				                    </a>
+				                </li>
+				                <li>
+				                    <a href="#" class="px-3 py-4 flex items-center text-xs uppercase font-bold text-white hover:underline lg:py-2">
+				                        <i class="fas fa-car"></i><span class="ml-1">Cars</span>
+				                    </a>
+				                </li>
+				                
+				                <li>
+				                    <a href="#" class="px-3 py-4 flex items-center text-xs uppercase font-bold text-white hover:underline lg:py-2">
+				                        <i class="fas fa-suitcase"></i><span class="ml-1">Vacations</span>
+				                    </a>
+				                </li>
+				            </ul>
+				        </div>
+				    </div>
+				</nav>
+		
+		
+		<h1 class="text-3xl font-bold text-white text-center mt-16 mx-auto px-4 sm:px-0" style="text-shadow: 2px 2px rgba(0,0,0,0.2);">Travel the world - cheap offers to anywhere!</h1>
+		
+		<!-- search form -->
+		<div class="w-full max-w-4xl mx-auto rounded p-4 flex flex-col justify-between sm:flex-row">
+			
+			<div class="mt-2 sm:mr-2 sm:w-4/12">
+					<label for="destination" class="text-white text-xs pl-2">Your Destination</label>
+					<input  style="background: rgba(255,255,255, 0.2)"
+							class="bg-transparent rounded w-full text-xl py-2 font-thin pl-2 pr-4 text-white leading-tight placeholder-white focus:outline-none focus:shadow-outline" 
+							type="text" 
+							placeholder="Where do you want to go?"
+					>	
+			</div>
+			
+			<div class="mt-2 sm:mx-2 sm:w-3/12">
+					<label for="time-period" class="text-white text-xs pl-2">Time Period</label>
+					<input  style="background: rgba(255,255,255, 0.2)"
+							class="bg-transparent rounded w-full text-xl py-2 font-thin pl-2 pr-4 text-white leading-tight placeholder-white focus:outline-none focus:shadow-outline" 
+							type="text" 
+							placeholder="05.06.20 - 12.06.20"
+					>	
+			</div>
+			
+			
+			
+			<div class="mt-2 sm:mx-2 sm:w-2/12">
+					<label for="budget" class="text-white text-xs pl-2">Max Budget ($)</label>
+					<input  style="background: rgba(255,255,255, 0.2)"
+							class="bg-transparent rounded w-full text-xl py-2 font-thin pl-2 pr-4 text-white leading-tight placeholder-white focus:outline-none focus:shadow-outline" 
+							type="text" 
+							placeholder="2000"
+					>	
+			</div>
+			
+			<div class="mt-2 sm:ml-2 sm:w-3/12">
+					<label for="search" class="text-white text-xs pl-2 ">Find Offers</label>
+					<button class="px-4 py-2 bg-white text-orange-500 rounded w-full">Search!</button>	
+			</div>
+			
+			
+		</div>
+		<!--/ search form -->
+	</div>
+	
+	<!-- popular destinations -->
+	<div class="container mx-auto mt-10 px-4">
+		<h2 class="font-thin text-3xl">Popular Destinations</h2>
+		<div class="mt-5 mb-5 flex flex-col sm:flex-row justify-between -mx-2 flex-wrap">
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1573995012741-eb49887f8732?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+						alt="Hawaii, USA"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">Hawaii</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">16 Oct - 23 Oct</p>
+							<p class="text-sm">3* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1558117338-aa433feb1c62?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=360&q=100"
+						alt="Hawaii, USA"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">Aruba</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">10 Nov. - 24 Nov.</p>
+							<p class="text-sm">4* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$199</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:mt-0 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1545591853-dd70186241e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=360&q=100"
+						alt="Cancun, Mexico"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">Mexico</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">10 Nov. - 24 Nov.</p>
+							<p class="text-sm">4* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$299</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1533094692971-5f4c56ec1339?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=360&q=100"
+						alt="Hawaii, USA"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">Canada</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">10 Nov. - 24 Nov.</p>
+							<p class="text-sm">4* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			
+		</div>
+		
+		<button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+		  Other Popular Destinations
+		</button>
+	</div>
+	<!--/ popular destinations -->
+	
+	<!-- popular cities -->
+	<div class="container mx-auto mt-10 px-4">
+		<h2 class="font-thin text-3xl">Cities to Visit</h2>
+		<div class="mt-5 mb-5 flex flex-col sm:flex-row justify-between -mx-2 flex-wrap">
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1542391120-de6f235e826a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+						alt="Miami, USA"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">Miami</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">16 Oct - 23 Oct</p>
+							<p class="text-sm">3* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1536942367753-3bdb71b7bb1c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+						alt="Las Vegas, USA"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">Las Vegas</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">10 Nov. - 24 Nov.</p>
+							<p class="text-sm">4* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$199</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+						alt="New York, USA"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">New York</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">10 Nov. - 24 Nov.</p>
+							<p class="text-sm">4* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$299</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			
+			<!-- card -->
+			<div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+				<div class="relative bg-red-500 pb-48 rounded-t">
+					<img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+						alt="Paris, France"
+						class="absolute top-0 h-full w-full object-cover rounded-t"
+						loading="lazy"
+					>
+				</div>
+				<div class="bg-white px-3 py-3 rounded-b shadow-lg">
+					<h3 class="text-xl">Paris</h3>
+					<div class="flex justify-between text-gray-500">
+						<div>
+							<p class="text-sm">10 Nov. - 24 Nov.</p>
+							<p class="text-sm">4* Hotel</p>
+						</div>
+						<div class="flex items-end text-gray-500 text-right text-xs">
+							<p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+						</div>	
+					</div>
+					
+				</div>
+			</div>
+			<!--/ card -->
+			
+			
+		</div>
+		
+		<button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+		  Other Popular Cities
+		</button>
+	</div>
+	<!--/ popular cities -->
+	
+	
+	<!-- newsletter -->
+	<div class="mt-20 px-4"
+		 style="background: url('images/palms.jpg') no-repeat;
+    			background-size: cover;"
+	>
+    	<div class="p-4 lg:p-16 container mx-auto">
+    		
+    		<div class="md:w-2/3 max-w-lg text-gray-700 mx-auto bg-white rounded shadow-lg p-4">
+    			
+    			<h2 class="text-3xl font-thin">Discover New Horizons - Get our Newsletter</h2>
+    			<p class="max-w-sm">Subscribe to our newsletter to get exclusive prices to places you didn't even know they exist!</p>
+    			
+    			<div class="flex items-center flex-col sm:flex-row">
+    			<input 
+    							class="bg-gray-100 border rounded w-full text-xl py-2 font-thin pl-2 pr-4 leading-tight placeholder-gray-600 focus:outline-none focus:shadow-outline mt-4 max-w-sm w-9/12" 
+    							type="text" 
+    							placeholder="Your E-Mail Address"
+    					>
+    			<button class="px-4 py-2 text-white bg-orange-500 rounded mt-5 uppercase font-semibold ml-2 mb-1 w-full sm:w-3/12">Subscribe</button>
+    			</div>	
+    		</div>
+    	</div>
+	</div>
+	<!--/ newsletter -->
+    
+    <!-- travel inspiration -->
+    <div class="container mx-auto mt-10 px-4">
+        <div class="flex flex-col md:flex-row items-center bg-white">
+            <div class="bg-white p-6 text-center w-full md:w-1/3 h-full">
+                <h2 class="text-3xl font-thin">Your Dream Vacation</h2>
+                <p class="mt-6 text-gray-600 font-thin">Discover your dream destination - from surfing, to cocktails on the beach &amp;  watching sunsets - there is a place for everything.</p>
+                
+                <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+                  Discover Destinations
+                </button>
+                
+            </div>
+            <div class="bg-white p-6 text-center w-full md:w-2/3 h-full">
+                
+                <div class="w-full items-center flex justify-between">
+                    <img src="https://images.unsplash.com/photo-1502680390469-be75c86b636f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=80" alt="Surfing" class="w-1/3 px-2" />
+                    <img src="https://images.unsplash.com/photo-1599738907696-28fedef045f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=80" alt="Tropical Cocktail" class="w-1/3 px-2" />
+                   
+                   <img src="https://images.unsplash.com/photo-1561571994-3c61c554181a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=80" alt="Palm Trees" class="w-1/3 sm:ml-2 px-2" />
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--/ travel inspiration -->
+    
+    
+    <!-- tropical destinations -->
+    <div class="container mx-auto mt-10 px-4">
+        <h2 class="font-thin text-3xl">Enter the Tropical Paradise</h2>
+        <div class="mt-5 mb-5 flex flex-col sm:flex-row justify-between -mx-2 flex-wrap">
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1587320754512-da4dbc717fc7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Maldives"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Maldives</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">16 Oct - 23 Oct</p>
+                            <p class="text-sm">3* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1576387723088-ab081cdcfc46?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Las Vegas, USA"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Bahamas</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$199</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1559305289-4c31700ba9cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Bali, Indonesia"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Bali</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$299</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Thailand"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Thailand</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+        </div>
+        
+        <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+          Other Tropical Destinations
+        </button>
+    </div>
+    <!--/ tropical destinations -->
+    
+    
+    <!-- romantic getaways -->
+    <div class="container mx-auto mt-10 px-4">
+        <h2 class="font-thin text-3xl">Romantic Getaways</h2>
+        <div class="mt-5 mb-5 flex flex-col sm:flex-row justify-between -mx-2 flex-wrap">
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1587240853629-754e6107fca1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Santorini"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Santorini, Greece</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">16 Oct - 23 Oct</p>
+                            <p class="text-sm">3* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1592396355679-1e2a094e8bf1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=260&q=100"
+                        alt="Cinque Terre, Italy"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Cinque Terre, Italy</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$199</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1563668454696-170e01768e54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Cartagena, Colombia"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Cartagena, Colombia</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$299</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Kyoto, Japan"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Kyoto, Japan</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+        </div>
+        
+        <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+          Other Romantic Destinations
+        </button>
+    </div>
+    <!--/ romantic getaways -->
+    
+    
+    <!-- travel inspiration -->
+    <div class="container mx-auto mt-10 px-4">
+        <div class="flex flex-col md:flex-row items-center bg-white">
+            <div class="bg-white p-6 text-center w-full md:w-1/3 h-full">
+                <h2 class="text-3xl font-thin">See the Northern Lights</h2>
+                <p class="mt-6 text-gray-600 font-thin">Have you ever wanted to see magic? The Northern Lights are nature's performance of true magic.</p>
+                
+                <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+                  To the Northern Lights
+                </button>
+                
+            </div>
+            <div class="bg-white p-6 text-center w-full md:w-2/3 h-full">
+                
+                <div class="w-full items-center flex justify-between">
+                    <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=80" alt="Aurora Borealis" class="w-1/3 px-2" />
+                    <img src="https://images.unsplash.com/photo-1579033461380-adb47c3eb938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=80" alt="The Northern Lights" class="w-1/3 px-2" />
+                   
+                   <img src="https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=80" alt="See the Northern Lights" class="w-1/3 sm:ml-2 px-2" />
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--/ travel inspiration -->
+    
+    
+    
+    
+    <!-- romantic getaways -->
+    <div class="container mx-auto mt-10 px-4">
+        <h2 class="font-thin text-3xl">The Most Popular Tours</h2>
+        <div class="mt-5 mb-5 flex flex-col sm:flex-row justify-between -mx-2 flex-wrap">
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1588816350265-7fde98ae1310?ixlib=rb-1.2.1&auto=format&fit=crop&w=320&q=80"
+                        alt="Dolphine Watching"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Dolphine Watching</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">16 Oct - 23 Oct</p>
+                            <p class="text-sm">3* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1501771924607-209f42a6e7e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
+                        alt="Sailing"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Sailing</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$199</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1575032748932-70116d68ed58?ixlib=rb-1.2.1&auto=format&fit=crop&w=320&q=80"
+                        alt="Wine Tasting"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Wine Tasting</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$299</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1593076436498-0da4afc9aa6e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Thailand"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Quad Tour</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+        </div>
+        
+        <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+          Other Exciting Adventures
+        </button>
+    </div>
+    <!--/ romantic getaways -->
+    
+    <!-- travel inspiration -->
+    <div class="container mx-auto mt-10 px-4">
+        <div class="flex flex-col md:flex-row items-center bg-white">
+            <div class="bg-white p-6 text-center w-full md:w-1/3 h-full">
+                <h2 class="text-3xl font-thin">Try New Food</h2>
+                <p class="mt-6 text-gray-600 font-thin">Discover delicacies from all over the world! Give your tastebuds a whole new experience!</p>
+                
+                <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+                  Discover Tasty Food
+                </button>
+                
+            </div>
+            <div class="bg-white p-6 text-center w-full md:w-2/3 h-full">
+                
+                <div class="w-full items-center flex justify-between">
+                    <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=100" alt="Try Guacamole Salad" class="w-1/3 px-2" />
+                    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=100" alt="Try Egg Salad" class="w-1/3 px-2" />
+                   
+                   <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&h=400&q=100" alt="Black Bowl Salad" class="w-1/3 sm:ml-2 px-2" />
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--/ travel inspiration -->
+    
+    
+    <!-- skiing & winter -->
+    <div class="container mx-auto mt-10 px-4">
+        <h2 class="font-thin text-3xl">Skiing &amp; Winter Vacation</h2>
+        <div class="mt-5 mb-5 flex flex-col sm:flex-row justify-between -mx-2 flex-wrap">
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1498576260462-eefc9d0ce9f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=360&q=100"
+                        alt="Canada"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Canada</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">16 Oct - 23 Oct</p>
+                            <p class="text-sm">3* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=360&q=100"
+                        alt="Cinque Terre, Italy"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Switzerland</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$199</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/photo-1551524559-8af4e6624178?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=100"
+                        alt="Austria"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">Austria</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$299</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+            <!-- card -->
+            <div class="rounded px-2 w-full pt-4 sm:w-1/2 md:w-1/2 lg:w-1/4 lg:pt-0">
+                <div class="relative bg-red-500 pb-48 rounded-t">
+                    <img src="https://images.unsplash.com/flagged/photo-1554758956-cd03b1906948?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=320&q=80"
+                        alt="France"
+                        class="absolute top-0 h-full w-full object-cover rounded-t"
+                        loading="lazy"
+                    >
+                </div>
+                <div class="bg-white px-3 py-3 rounded-b shadow-lg">
+                    <h3 class="text-xl">France</h3>
+                    <div class="flex justify-between text-gray-500">
+                        <div>
+                            <p class="text-sm">10 Nov. - 24 Nov.</p>
+                            <p class="text-sm">4* Hotel</p>
+                        </div>
+                        <div class="flex items-end text-gray-500 text-right text-xs">
+                            <p>Only <span class="font-thin text-3xl text-orange-500">$99</span></p>
+                        </div>  
+                    </div>
+                    
+                </div>
+            </div>
+            <!--/ card -->
+            
+            
+        </div>
+        
+        <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+          Other Winter Destinations
+        </button>
+    </div>
+    <!--/ skiing & winter -->
+    
+    
+    
+    <!-- Blog -->
+    <div class="container mx-auto mt-10 px-4">
+        <h2 class="font-thin text-3xl">Our Travel Blog</h2>
+        <div class="mt-5 mb-5">
+            
+            <img src="images/africa.jpg" alt="Africa Wild Animals" />
+            <h3 class="font-thin text-2xl text-center mt-2">Explore Africa</h3>
+            <p class="font-thin text-center">Admire Africa's untamed wildlife and embrace the astonishing beauty of the savannas</p>
+            
+            <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+              See all articles about Africa
+            </button>
+            
+            <img src="images/south-america.jpg" alt="Africa Wild Animals" class="mt-12" />
+            <h3 class="font-thin text-2xl text-center mt-2">Explore South America</h3>
+            <p class="font-thin text-center">Discover breathtaking views, mesmerising landscapes and an incredible cultural mix</p>
+            
+            <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+              See all articles about South America
+            </button>
+            
+            <img src="images/asia.jpg" alt="Asia" class="mt-12" />
+            <h3 class="font-thin text-2xl text-center mt-2">Explore Asia</h3>
+            <p class="font-thin text-center">Extraordinary culture, diverse food, vast countries to explore</p>
+            <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+              See all articles about Asia
+            </button>
+            
+            
+            
+            <img src="images/australia.jpg" alt="Australia" class="mt-12" />
+            <h3 class="font-thin text-2xl text-center mt-2">Explore Australia</h3>
+            <p class="font-thin text-center">Discover the uniqueness of the land down under</p>
+            <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+              See all articles about Australia
+            </button>
+            
+            <img src="images/europe.jpg" alt="Europe" class="mt-12" />
+            <h3 class="font-thin text-2xl text-center mt-2">Explore Europe</h3>
+            <p class="font-thin text-center">The diversity of the old continent at your disposal</p>
+            <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+              See all articles about Europe
+            </button>
+            
+            <img src="images/north-america.jpg" alt="North America" class="mt-12" />
+            <h3 class="font-thin text-2xl text-center mt-2">Explore North America</h3>
+            <p class="font-thin text-center">Take a closer look at what North America has to offer</p>
+            <button class="mt-10 block mx-auto rounded text-white transition duration-500 ease-in-out bg-teal-500 hover:bg-red-500 transform hover:-translate-y-1 hover:scale-110 px-4 py-2">
+              See all articles about North America
+            </button>
+        </div>
+        
+        
+    </div>
+    <!--/ skiing & winter -->
+    
+    
+    
+    <div class="footer mt-32 pb-24" style="background: rgb(255,155,112); background: linear-gradient(45deg,  rgba(219,41,116,1)  0%, rgba(249,142,61,1) 100%);">
+        <div class="container mx-auto px-6 text-white pt-12 flex justify-between flex-col sm:flex-row">
+            <div class="mt-10 sm:mt-0">
+                <h3 class="text-xl font-bold">More Travel Offers</h3>
+                <ul>
+                    <li class="mt-6">Last Minute Offers</li>
+                    <li class="mt-3">All Inclusive Offers</li>
+                    <li class="mt-3">Road Trips</li>
+                    <li class="mt-3">Weekend Trips</li>
+                </ul>
+            </div>
+            <div class="mt-10 sm:mt-0">
+                 <h3 class="text-xl font-bold">About us</h3>
+                 <ul>
+                    <li class="mt-6">Who we are</li>
+                    <li class="mt-3">Testimonials</li>
+                    <li class="mt-3">Contact</li>
+                    <li class="mt-3">Jobs</li>
+                </ul>
+             </div>
+            <div class="mt-10 sm:mt-0">
+                <h3 class="text-xl font-bold">Social Media</h3>
+                <ul>
+                    <li class="mt-6">Facebook</li>
+                    <li class="mt-3">Twitter</li>
+                    <li class="mt-3">Instagram</li>
+                    <li class="mt-3">Pinterest</li>
+                </ul>
+            </div>
+            <div class="mt-10 sm:mt-0">
+                <h3 class="text-xl font-bold">Legal</h3>
+                <ul>
+                    <li class="mt-6">Impressum</li>
+                    <li class="mt-3">Privacy Policy</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        var menu;
+        document.getElementById('menu-btn').addEventListener('click', function(e){
+            if( menu == undefined ) {
+                menu = document.getElementById('menu');
+            }
+            menu.classList.toggle("hidden");
+        });
+    </script>
+</body>
+</html>

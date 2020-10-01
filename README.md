@@ -18,10 +18,10 @@ All assets used in the templates and components are free to use:
 You can download and use any of the following Tailwind templates for landing pages:
 
 * Startup
-*
+* Travel Agency Portal
 
 ## Free Components built with Tailwind CSS
 
 You can download and use any of the following free Tailwind components:
 
-* 
+* Responsive Cards
